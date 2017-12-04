@@ -32,4 +32,8 @@ const store = createStore(
 /* eslint-enable */
 
 // app init
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+  , document.getElementById('root'));

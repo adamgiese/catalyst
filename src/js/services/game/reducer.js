@@ -1,4 +1,4 @@
-const handleActions = (state = {}, action) => {
+const handleActions = (state = [], action) => {
   const {
     type,
     payload,
@@ -9,7 +9,7 @@ const handleActions = (state = {}, action) => {
       return {
         ...state,
         timestamp: payload.timestamp,
-        version: payload.version,
+        player: payload.player,
       };
     default:
       return state;
