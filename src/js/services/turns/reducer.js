@@ -1,4 +1,4 @@
-const handleActions = (state = {}, action) => {
+const handleActions = (state = [], action) => {
   const {
     type,
   } = action;

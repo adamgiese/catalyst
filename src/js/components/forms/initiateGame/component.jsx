@@ -28,13 +28,18 @@ export default class InitiateGameForm extends React.Component {
   }
 
   render() {
+    const { isGameCreated } = this.props;
     return (
-      <div>
-        <label>
-          Name:
-          <input name='name' onChange={this.handleInputChange} />
-        </label>
-        <button onClick={() => { this.handleSubmit(); }}>Initiate</button>
+      <div className='initiate-game-container'>
+        { isGameCreated ? null :
+          <div>
+            <label>
+              Name:
+              <input name='name' onChange={this.handleInputChange} />
+            </label>
+            <button onClick={() => { this.handleSubmit(); }}>Initiate</button>
+          </div>
+        }
       </div>
     );
   }

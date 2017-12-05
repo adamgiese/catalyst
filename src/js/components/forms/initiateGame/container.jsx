@@ -1,11 +1,10 @@
 import { connect } from 'react-redux';
-import {
-  initiateGame
-} from '../../../services/game/actions';
+import { initiateGame } from '../../../services/game/actions';
+import { getIsGameCreated } from '../../../services/game/selectors';
 import InitiateGameForm from './component.jsx';
 
 const mapStateToProps = state => ({
-  isActive: state,
+  isGameCreated: getIsGameCreated(state),
 });
 
 const mapDispatchToProps = dispatch => ({
