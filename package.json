@@ -37,6 +37,7 @@
     "redux": "^3.7.2",
     "reselect": "^3.0.1",
     "sass-loader": "^6.0.6",
+    "seedrandom": "^2.4.3",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
     "webfontloader": "^1.6.28",
